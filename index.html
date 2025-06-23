@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Exclusive Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Aspect ratio container with fallback */
+    .video-container {
+      position: relative;
+      width: 100%;
+      /* Modern browsers */
+      aspect-ratio: 16/9;
+      /* Fallback for older browsers */
+      padding-top: 56.25%;
+    }
+    .video-container iframe,
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <iframe
+      src="https://customer-ge3mcw8wa4d3oqr2.cloudflarestream.com/a371081a08d656ce22542a1c1be3fb49/iframe?poster=https://customer-ge3mcw8wa4d3oqr2.cloudflarestream.com/a371081a08d656ce22542a1c1be3fb49/thumbnails/thumbnail.jpg"
+      loading="lazy"
+      allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+      allowfullscreen
+      muted
+    ></iframe>
+  </div>
+
+  <script>
+    // Polyfill for browsers that ignore aspect-ratio but respect padding-top
+    // No further action needed; container fallback covers it.
+  </script>
+</body>
+</html>
