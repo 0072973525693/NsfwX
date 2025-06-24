@@ -1,0 +1,21 @@
+# macOS system junk
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+
+# VSCode settings
+.vscode/
+
+# OS and editor backups
+*.swp
+*.tmp
+*.bak
+*.old
+
+# Node/npm stuff (if ever used)
+node_modules/
+*.log
+
+# Thumbnails
+Thumbs.db
